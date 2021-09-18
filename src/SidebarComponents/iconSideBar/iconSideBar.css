@@ -1,0 +1,52 @@
+.side-drawer-icon {
+  height: 100%;
+  background: white;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 20%;
+  min-width: 200px;
+
+  max-width: 200px;
+  /* z-index: 200; */
+  transition: transform 0.3s ease-out;
+}
+.side-drawer-icon .open {
+  min-width: 400px;
+  max-width: 500px;
+}
+
+.side-drawer-icon ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-drawer-icon li {
+  margin: 0.5rem 0;
+}
+
+.side-drawer-icon a {
+  color: #521751;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.side-drawer-icon a:hover,
+.side-drawer-icon a:active {
+  color: #fa923f;
+}
+
+@media (min-width: 769px) {
+  .side-drawer-icon {
+    /* display: none; */
+  }
+}
+
+.popout:hover {
+  transition: 0.9s;
+  font-size: 30px;
+}
